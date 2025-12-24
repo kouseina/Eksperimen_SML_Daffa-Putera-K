@@ -16,8 +16,8 @@ from sklearn.impute import SimpleImputer
 
 def parse_args():
     p = argparse.ArgumentParser(description="Automate preprocessing for House Prices dataset")
-    p.add_argument("--raw_dir", type=str, default="namadataset_raw", help="Folder dataset mentah")
-    p.add_argument("--out_dir", type=str, default="preprocessing/namadataset_preprocessing", help="Folder output preprocessing")
+    p.add_argument("--raw_dir", type=str, default="house_prices_raw", help="Folder dataset mentah")
+    p.add_argument("--out_dir", type=str, default="preprocessing/house_prices_preprocessing", help="Folder output preprocessing")
     p.add_argument("--target", type=str, default="SalePrice", help="Nama kolom target")
     p.add_argument("--test_size", type=float, default=0.2, help="Porsi validation split")
     p.add_argument("--random_state", type=int, default=42, help="Random seed")
